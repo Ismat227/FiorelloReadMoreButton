@@ -20,10 +20,7 @@ namespace One_to_many_migration.DAL
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<FlowerTitle> Title { get; set; }
         public DbSet<Expert> Experts { get; set; }
-        
-        
-        
-        
-
+        public DbSet<HeaderLogo> Logo { get; set; }
+        public DbSet<FooterSocialMedia> SocialMedias { get; set; }
     }
 }

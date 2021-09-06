@@ -24,6 +24,10 @@ namespace FiorelloHomeWork
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(20);
+            });
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>(options =>
             {
@@ -41,6 +45,7 @@ namespace FiorelloHomeWork
             }
 
             app.UseRouting();
+            app.UseSession();
             app.UseStaticFiles();
             app.UseEndpoints(endpoints =>
             {

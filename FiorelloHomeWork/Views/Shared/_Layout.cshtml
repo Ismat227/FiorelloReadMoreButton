@@ -24,15 +24,15 @@
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg d-flex d-lg-block justify-content-between d-xl-flex navbar-light py-3 py-lg-0">
-                        <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                        @await Component.InvokeAsync("HeaderLogo")
+                        @*<a class="navbar-brand" asp-controller="Home" asp-action="Index">
                             <img src="~/img/logo.png" alt="" id="logo">
-                        </a>
+                        </a>*@
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation" id="mobile-navbar-show">
                             <span class="navbar-toggler-icon" style="font-size: 12px;"></span>
                         </button>
-
                         <div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
@@ -326,7 +326,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                @await Component.InvokeAsync("FooterSocialMedia")
+                @*<div class="col-md-6 col-lg-3">
                     <div class="item">
                         <h6>SOCIAL MEDIA</h6>
                         <ul class="list-unstyled mt-4">
@@ -336,7 +337,7 @@
                             <li><a class="text-black-50" href="">Pinterest</a></li>
                         </ul>
                     </div>
-                </div>
+                </div>*@
                 <div class="col-md-6 col-lg-3">
                     <div class="item">
                         <h6>ARCHIVE</h6>

@@ -18,9 +18,7 @@ namespace FiorelloHomeWork.Controllers
         public async Task<IActionResult> Index()
         {
             ViewBag.ProductCount = _context.Products.Where(p => p.IsDeleted == false).Count();
-            return View(await _context.Products.Include(p=>p.ProductImages).Where(p=>p.IsDeleted==false)
-                .OrderByDescending(p => p.Id).Take(12).ToListAsync()
-                );
+            return View();
         }
         public async Task<IActionResult> ReadMore(int take=8 ,int skip=12) 
         {

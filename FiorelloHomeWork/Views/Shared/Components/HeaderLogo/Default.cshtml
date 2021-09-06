@@ -1,0 +1,5 @@
+﻿@model IEnumerable<HeaderLogo>
+
+    <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+        <img src="~/img/@Model.FirstOrDefault().LogoImage" alt="" id="logo">
+    </a>
