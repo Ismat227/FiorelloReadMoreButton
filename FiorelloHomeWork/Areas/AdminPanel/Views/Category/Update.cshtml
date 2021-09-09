@@ -1,0 +1,31 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="row">
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Update Category</h3>
+        </div>
+        <!-- /.card-header -->
+        <!-- form start -->
+        <form method="post">
+            <div class="card-body">
+                <div class="form-group">
+                    <label asp-for="Name">Name</label>
+                    <input asp-for="Name" class="form-control" placeholder="Name">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a class="btn btn-light" asp-action="Index">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section Script{
+  <partial name="_ValidationPartial"/>
+}
+

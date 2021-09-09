@@ -1,8 +1,11 @@
-﻿using FiorelloHomeWork.ViewModels;
+﻿
+using FiorelloHomeWork.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using One_to_many_migration.DAL;
+using One_to_many_migration.Models;
 using One_to_many_migration.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -40,11 +43,71 @@ namespace One_to_many_migration.Controllers
             //Response.Cookies.Append("basket",JsonSerializer.Serialize(baskets));
             return View(homeviewmodel);
         }
-        public IActionResult AddBasket()
+        public IActionResult AddBasket(int id)
         {
-            //string sesionData = HttpContext.Session.GetString("name");
-            List < ProductBasket> cookiedata = JsonSerializer.Deserialize<List<ProductBasket>>(Request.Cookies[""]);
-            return Json(cookiedata);
+            Product product = _context.Products.FirstOrDefault(p => p.Id == id);
+            if (product == null) return NotFound();
+            string basket = HttpContext.Request.Cookies["basket"];
+            if (basket==null)
+            {
+                List<CookieItemViewModel> products = new List<CookieItemViewModel>();
+                products.Add(new CookieItemViewModel
+                {
+                    Id=product.Id,
+                    Count=1
+                    
+                });
+                string basketstr = JsonConvert.SerializeObject(products);
+                HttpContext.Response.Cookies.Append("basket", basketstr);
+                              
+            }
+            else
+            {
+                List<CookieItemViewModel> products = JsonConvert.DeserializeObject<List<CookieItemViewModel>>(basket);
+                CookieItemViewModel cookieItem = products.FirstOrDefault(p => p.Id == product.Id);
+                if (cookieItem==null)
+                {
+                    products.Add(new CookieItemViewModel
+                    {
+                        Id = product.Id,
+                        Count = 1
+
+                    });
+                }
+                else
+                {
+                    cookieItem.Count++;
+                }
+                string basketstr = JsonConvert.SerializeObject(products);
+                HttpContext.Response.Cookies.Append("basket", basketstr);
+                
+
+            }
+            
+            return RedirectToAction("Index", "Home");
+            
+        }
+        public IActionResult ShowBasket()
+        {
+            return Content(HttpContext.Request.Cookies["basket"]);
+        }
+
+        public IActionResult DeleteCookies(int id)
+        {
+            string basket = HttpContext.Request.Cookies["basket"];
+            List<CookieItemViewModel> products = JsonConvert.DeserializeObject<List<CookieItemViewModel>>(basket);
+            foreach (var item in products)
+            {
+                if (item.Id==id)
+                {
+                    products.Remove(item);
+                    break;
+                }
+            }
+            string basketstr = JsonConvert.SerializeObject(products);
+            HttpContext.Response.Cookies.Append("basket", basketstr);
+            return RedirectToAction("Index","Home");
+
         }
     }
 }

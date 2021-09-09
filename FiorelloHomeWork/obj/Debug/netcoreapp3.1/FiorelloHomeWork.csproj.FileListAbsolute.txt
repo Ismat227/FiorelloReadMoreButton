@@ -149,4 +149,14 @@ C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcorea
 C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Product\Default.cshtml.g.cs
 C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\FooterSocialMedia\Default.cshtml.g.cs
 C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\HeaderLogo\Default.cshtml.g.cs
-C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Views\ProductBasket\Index.cshtml.g.cs
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\_ViewImports.cshtml.g.cs
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\_ViewStart.cshtml.g.cs
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Category\Index.cshtml.g.cs
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Category\Create.cshtml.g.cs
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Category\Update.cshtml.g.cs
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Shared\_ValidationPartial.cshtml.g.cs
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Slides\Index.cshtml.g.cs
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Slides\Create.cshtml.g.cs

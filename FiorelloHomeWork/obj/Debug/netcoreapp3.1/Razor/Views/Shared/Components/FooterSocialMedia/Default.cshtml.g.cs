@@ -33,8 +33,15 @@ using FiorelloHomeWork.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\Views\_ViewImports.cshtml"
+using FiorelloHomeWork.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"17942bef871085cf8426837ceeb0eb350a1a8de0", @"/Views/Shared/Components/FooterSocialMedia/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"de0e70253765bd0751624c0803de65d6ffa2e61a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"de7d749cf1164043f1240ae89b051bdaf1784ee0", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_FooterSocialMedia_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<FooterSocialMedia>>
     {
         #pragma warning disable 1998
