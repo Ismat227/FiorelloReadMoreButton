@@ -14,6 +14,6 @@ namespace One_to_many_migration.Models
         [Required, StringLength(255)]
         public string Image { get; set; }
         [NotMapped,Required]
-        public IFormFile Photo { get; set; }
+        public List<IFormFile> Photos { get; set; }
     }
 }
