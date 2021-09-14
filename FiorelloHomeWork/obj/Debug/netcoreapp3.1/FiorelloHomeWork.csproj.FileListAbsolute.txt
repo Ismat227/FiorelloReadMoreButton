@@ -160,3 +160,10 @@ C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcorea
 C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Shared\_ValidationPartial.cshtml.g.cs
 C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Slides\Index.cshtml.g.cs
 C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Slides\Create.cshtml.g.cs
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\ASUS\Desktop\FiorelloReadMoreButton\FiorelloHomeWork\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs

@@ -32,11 +32,9 @@
                                     <tr>
                                         <td>@count</td>
                                         <td><img src="~/img/@slide.Image" style="height:300px;width:450px" alt="" /></td>                                       
-                                        <td>                                            
+                                        <td>
                                             <a asp-action="Update" asp-route-id="@slide.Id" class="btn  btn-warning"><i class="fas fa-edit"></i></a>
-                                            <a asp-action="Delete" asp-route-id="@slide.Id" class="btn  btn-danger">
-                                                <i class="far fa-trash-alt"></i>
-                                            </a>
+                                            <button type="submit" asp-action="Delete" asp-route-data="@slide.Id" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>                                          
                                         </td>
                                     </tr>
                                     count++;
